@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1000px;
+    margin: auto;
+}
+.header-menu{
+
+}
+.header-menu ul{
+ text-align: center;
+ background: #222222;
+}
+.header-menu ul li{
+    display: inline-block;
+   
+}
+.header-menu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 46px 25px;
+    color: #ddd;
+    font-size: 21px;
+    
+}
+.header-menu ul li:hover a{
+    color: #fff;
+}
+.header-menu ul li ul li:hover > a{
+    color: #fff;
+    background: #3c62b6;
+}
+/* drop down item 1 */
+.header-menu ul li{
+    position: relative;
+}
+.header-menu ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    background: black;
+    border-top: 5px solid blue;
+}
+.header-menu ul li ul li a {
+    padding: 16px 32px;
+    display: block;
+}
+.header-menu ul li ul li{
+    display: block;
+}
+.header-menu ul li  ul{
+    visibility: hidden;
+    opacity: 0;
+    transform: scaley(0);
+    transition: .3s;
+    transform-origin: bottom center;
+}
+.header-menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaley(1);
+}
+/* basai dewar jonno */
+.header-menu ul li ul li{
+    position: relative;
+
+}
+.header-menu ul li ul li ul{
+    position: absolute;
+    top:0 ;
+    left:100%;
+    width: 200px;
+    border-top:3px solid black ;
+}
+.header-menu ul li ul li ul li:nth-child(7) a{
+    border-bottom: 3px solid black;
+}
+/* .header-menu ul li ul:nth-child(2) li  */
+.header-menu ul li ul:nth-child(2) li ul{
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+   
+
+}
+.header-menu ul li ul:nth-child(2) li:hover ul{
+    opacity: 1;
+    visibility:visible;
+   
+}
+/* banner section */
+.banner {
+    background-image: url(./img/young-mens.jpg);
+    background-size: cover;
+    padding: 298px 0;
+    background-position: top center;
+    margin-bottom: 15px;
+}
+.banner h2 {
+    background: #ffffff;
+    width: 29%;
+    margin: auto;
+    text-align: center;
+    padding: 15px 9px;
+    font-size: 33px;
+    margin-bottom: 26px;
+}
+.banner h3 {
+    width: 90%;
+    margin: auto;
+    background: white;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 23px;
+    font-weight: 600;
+}
+.banner a {
+    color: white;
+    text-decoration: none;
+    background: #ff0000;
+    padding: 11px 15px;
+    font-size: 20px;
+    border: 2px solid red;
+    font-weight: 600;
+    transition: .4s;
+    display: block;
+    width: 12%;
+    margin: auto;
+    margin-top: 46px;
+    text-align: center;
+}
+.banner a:hover{
+    background: #fff;
+    color: black;
+}
+/* list outside */
+.list-outside {
+    text-align: center;
+    box-shadow: 2px 1px 5px -1px #00000061;
+    padding: 30px 0;
+}
+.list-outside h5 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+.list-outside ul{
+    list-style-position: outside;
+}
+.list-outside li{
+    margin: 10px;
+}
+/* list inside */
+.list-inside {
+    text-align: center;
+    box-shadow: 2px 1px 4px -1px #00000061;
+    padding: 30px 0;
+    margin-bottom: 10px;
+}
+.list-inside h5 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+.list-inside ul{
+  list-style-position: inside;
+}
+.list-inside li{
+margin-bottom: 10px;
+}
+/* email-section */
+.email-section {
+    background: #f2f2f2;
+    padding: 40px 86px;
+    margin-top: 40px;
+}
+.email-section .email {
+    padding: 10px 352px 10px 19px;
+    font-size: 17px;
+    border: 1px solid red;
+}
+.email-section span {
+    font-size: 17px;
+    background: red;
+    color: white;
+    padding: 11px 12px;
+    border: 1px solid red;
+    cursor: pointer;
+    transition: .3s;
+}
+.email-section span:hover{
+    color: black;
+    background: #fff;
+}
+/* list-style */
+.list-style{
+padding: 40px 20px;
+text-align: center;
+border: 2px dotted #ddd;
+margin-top: 15px;
+}
+.list-style li {
+    padding: 6px 0;
+}
+.list-style h5 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 13px;
+}
+.list-1{
+    display: inline-block;
+}
+.list-1 ol{
+list-style-type: lower-roman;
+}
+
+.list-2 {
+    display: inline-block;
+    margin-left: 40px;
+}
+.list-2 ol{
+    list-style-type: disc;
+}
+.list-3 {
+    display: inline-block;
+    margin-left: 40px;
+}
+.list-3 ol{
+    list-style-type:lower-greek;
+}
+/* footer section */
+.footer-section {
+    background: black;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+.footer-section h5 {
+    color: #ddd;
+    font-size: 20px;
+    padding-top: 20px;
+}
+.footer-section ul {
+    margin-top: 37px;
+}
+.footer-section ul li{
+    display: inline-block;
+}
+.footer-section ul li a {
+    background: #5da4f8;
+    color: black;
+    display: inline-block;
+    /* padding: 20px; */
+    font-size: 24px;
+    width: 66px;
+    height: 66px;
+    line-height: 66px;
+    border-radius: 50%;
+}
+.footer-section ul li a:hover{
+    background: white;
+}
